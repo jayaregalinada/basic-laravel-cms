@@ -1,0 +1,13 @@
+#offsetnav {
+    background-color: darken($brand-primary, 10%);
+    width: $offsetnav-width;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    height: 100%;
+    color: invert(darken($brand-primary, 10%));
+    .panel, .list-group-item {
+        background-color: transparent;
+    }
+}

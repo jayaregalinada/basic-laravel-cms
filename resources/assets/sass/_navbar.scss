@@ -1,0 +1,37 @@
+.navbar {
+  padding: 0;
+  .navbar-nav {
+    > .nav-item {
+      padding: $navbar-padding-y $navbar-padding-x;
+      &.active, &:focus, &:hover {
+        background-color: $navbar-inverse-active-bg;
+      }
+    }
+  }
+  .navbar-toggler {
+    border-width: 0;
+  }
+}
+
+#navigation {
+  > .heading {
+    border-color: $navbar-border-color;
+    border-width: $navbar-border-width;
+    border-style: $navbar-border-style;
+    img {
+      height: 3.5em;
+    }
+    .container {
+      padding: $navbar-padding-y $navbar-padding-x * 2;
+    }
+    .title {
+      color: #FFF;
+      font-family: Georgia, serif;
+      font-weight: bold;
+      font-size: .8em;
+      line-height: 16px;
+      vertical-align: middle;
+      width: 12em;
+    }
+  }
+}

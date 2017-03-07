@@ -1,0 +1,9 @@
+$offsetnav-width:           250px !default;
+
+main#content {
+    margin-left: $offsetnav-width;
+}
+
+textarea.no-resize {
+    resize: none;
+}

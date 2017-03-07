@@ -1,0 +1,27 @@
+@mixin margin($size, $position: false) {
+    @if $position == false {
+        margin: $size !important;
+    }
+    @else {
+        margin-#{$position}: $size !important;
+    }
+}
+
+.no-margin {
+    @include margin(0);
+}
+@each $position in top, right, bottom, left {
+    .no-margin-#{$position} {
+        @include margin(0, $position);
+    }
+    .margin-#{$position}-#{auto} {
+        @include margin(auto, $position);
+    }
+    @for $i from 1 through 50 {
+        @if $i % 10 == 0 {
+            .margin-#{$position}-#{$i} {
+                @include margin($i * 1px, $position);
+            }
+        }
+    }
+}

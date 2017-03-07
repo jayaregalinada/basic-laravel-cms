@@ -1,0 +1,5 @@
+.dropdown.show {
+  .dropdown-toggle::after {
+    transform: rotate(180deg);
+  }
+}

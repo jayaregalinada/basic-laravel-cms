@@ -1,0 +1,17 @@
+// Variables
+@import "dashboard/variables";
+
+$fa-font-path: "/fonts" !default;
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "node_modules/font-awesome/scss/font-awesome";
+@import "dashboard/bootswatch";
+@import "margins";
+@import "paddings";
+@import "dashboard/scaffolding";
+
+
+@import "dashboard/navigation";
+@import "dropdown";
+
